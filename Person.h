@@ -23,4 +23,4 @@ struct Person {
 
  };
 
-#endif PERSON_H
+#endif
