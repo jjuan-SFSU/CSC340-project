@@ -12,12 +12,11 @@ void Menu::loadMenu(LinkedList& menu, const string& menuChoice) {
 
     if (!file.is_open()) {
         cout << "Error opening file: " << menuChoice << endl;
-
         return;
     }
 
     while (getline(file, food)) {
-        cout << food << endl;
+        menu.push_back(food);
     }
 
     file.close();
