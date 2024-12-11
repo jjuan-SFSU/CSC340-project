@@ -1,9 +1,14 @@
 #include "iostream"
-#include "C:\Users\CoachFlapjack\CLionProjects\CSC340-project\linkedlist.h"
+#include "linkedlist.h"
+#include "linkedlist.cpp"
 
 using namespace std;
 
 int main() {
     cout << "Hello, World!" << endl;
+
+    LinkedList list = LinkedList("test");
+    list.print();
+
     return 0;
 }

@@ -14,8 +14,8 @@ struct LinkedList {
       int count;
    
    public:
-      LinkedList() : head(nullptr), tail(nullptr), count(0) {} // Default constructor
-      LinkedList(const std::string& word);  // Constructor to initialize with a word
+      LinkedList() : head(nullptr), tail(nullptr), count(0) {}
+      LinkedList(const std::string& word);
       ~LinkedList();
       
       LinkedList& operator+=(LinkedList& other);
@@ -46,5 +46,6 @@ struct LinkedList {
 
 string cleanInput(const string& input);
 Node* findWord(LinkedList* lDict, const string& userWord);
+
 
 #endif // LINKEDLIST_H

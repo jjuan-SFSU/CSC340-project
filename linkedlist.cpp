@@ -1,6 +1,9 @@
 #ifndef LINKEDLIST_CPP
 #define LINKEDLIST_CPP
+
 #include "LinkedList.h"
+#include "Node.h"
+
 #include <iostream>
 #include <string>
 #include <cctype>
@@ -8,7 +11,14 @@
 using namespace std;
 
 LinkedList::~LinkedList() {
-    clear();
+    Node* current = head; // Start at the head of the list
+    while (current != nullptr) {
+        Node* next = current -> getNext(); // Save the pointer to the next node
+        delete current;             // Delete the current node
+        current = next;             // Move to the next node
+    }
+    head = nullptr; // Optional: Clear the head pointer (good practice)
+    tail = nullptr;
 }
 
 LinkedList::LinkedList(const std::string& word) : head(nullptr), tail(nullptr), count(0) {
