@@ -2,7 +2,6 @@
 #include "linkedlist.cpp"
 #include "Menu.h"
 #include "Menu.cpp"
-#include "ChineseCuisine.txt"
 
 using namespace std;
 
