@@ -18,7 +18,7 @@ struct Person {
     virtual void displayInfo() const = 0;
     virtual string getRole() const = 0;
 
-    string getName() const;
+    [[nodiscard]] string getName() const;
     int getAge() const;
 
  };

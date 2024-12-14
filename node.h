@@ -28,26 +28,8 @@ struct Node {
 };
 
 bool operator==(const Node& lhs, const Node& rhs);
-bool operator!=(const Node& lhs, const Node& rhs);
-bool operator<(const Node& lhs, const Node& rhs);
-bool operator>(const Node& lhs, const Node& rhs);
-bool operator<=(const Node& lhs, const Node& rhs);
-bool operator>=(const Node& lhs, const Node& rhs);
-
-// Comparison operators for Node with std::string
 bool operator==(const Node& lhs, const std::string& rhs);
-bool operator!=(const Node& lhs, const std::string& rhs);
-bool operator<(const Node& lhs, const std::string& rhs);
-bool operator>(const Node& lhs, const std::string& rhs);
-bool operator<=(const Node& lhs, const std::string& rhs);
-bool operator>=(const Node& lhs, const std::string& rhs);
-
 bool operator==(const std::string& lhs, const Node& rhs);
-bool operator!=(const std::string& lhs, const Node& rhs);
-bool operator<(const std::string& lhs, const Node& rhs);
-bool operator>(const std::string& lhs, const Node& rhs);
-bool operator<=(const std::string& lhs, const Node& rhs);
-bool operator>=(const std::string& lhs, const Node& rhs);
 
 
 #endif // NODE_H

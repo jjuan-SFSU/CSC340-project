@@ -6,8 +6,8 @@ using namespace std;
 
 struct Menu {
 
-public:
-	void loadMenu(LinkedList& menu, const string& menuChoice);
+	public:
+		void loadMenu(LinkedList& menu, const string& menuChoice);
 
 };
 
